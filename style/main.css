@@ -1,0 +1,51 @@
+.contact-form {
+    margin: 6em 0;
+    position: relative;
+    margin-top: 50px;
+}
+
+form {
+    display: block;
+    margin-top: 0;
+}
+
+.contact-form h1 {
+    color: #000000;
+    padding: 2em 1px;
+}
+
+.contact-form .right {
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-form .right .btn-secondary {
+    background: #FF5B00 ;
+    color: #fff;
+    border: 0;
+    width: 100%;
+    
+}
+
+.carousel img {
+    height: 900px;
+    background-size: cover;
+}
+
+nav {
+    background-color: #a03601;
+    color: rgb(255, 255, 255);
+}
+
+.contact-form {
+    background-color: #a03601;
+    height: 300px;
+}
+
+footer {
+    background-color: #c86631;
+    height: auto;
+}

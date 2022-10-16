@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.header-portofolio {
+  height: 100vh;
+  position: relative;
+}
+.header-portofolio::before {
+  background-image: url("../images/jabat-tangan.jpg");
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.4);
+}
+.header-portofolio .wrapper {
+  color: white;
+  position: absolute;
+  top: 50vh;
+}
+.header-portofolio .wrapper h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  font-style: bold;
+}
+.header-portofolio .wrapper .sub-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.content-portofolio {
+  position: relative;
+}
+.content-portofolio .frame-image {
+  width: 98%;
+  margin: auto;
+  height: 18rem;
+}
+.content-portofolio .frame-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+.content-portofolio .frame-image:hover img {
+  cursor: pointer;
+  /* transform: translate(-5%, -5%); */
+  transform: scale(1.1);
+}
+.content-portofolio .content-image .title {
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+}
+.content-portofolio .content-image .description {
+  font-size: 13px;
+  color: #424242;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.content-portofolio .title-produk {
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 2rem;
+}
+.porto-2 {
+  margin-top: 3rem;
+}
+.card-porto {
+  display: none;
+}
+.card-porto:nth-child(1),
+.card-porto:nth-child(2),
+.card-porto:nth-child(3),
+.card-porto:nth-child(4) {
+  display: block;
+}
+.content-portofolio .icon-tools {
+  margin: auto;
+  width: 50%;
+  height: 4.5rem;
+  filter: grayscale();
+  cursor: pointer;
+}
+.content-portofolio .icon-tools img {
+  width: 100%;
+  height: 100%;
+}
+.content-portofolio .icon-tools:hover {
+  filter: none;
+}
+@media screen and (max-width: 767px) {
+  .header-portofolio .wrapper h1 {
+    font-size: 3rem;
+  }
+  .header-portofolio .wrapper .sub-title {
+    font-size: 20px;
+  }
+  .content-portofolio .frame-image {
+    height: 13rem;
+    width: 100%;
+  }
+  .content-portofolio .icon-tools {
+    width: 80%;
+    height: 5rem;
+    filter: none;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1020px) {
+  .header-portofolio .wrapper h1 {
+    font-size: 5rem;
+  }
+  .header-portofolio .wrapper .sub-title {
+    font-size: 2rem;
+  }
+  .content-portofolio .frame-image {
+    height: 10rem;
+    width: 100%;
+  }
+}

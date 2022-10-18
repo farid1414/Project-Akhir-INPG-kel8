@@ -3,10 +3,12 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
 .header-portofolio {
   height: 100vh;
   position: relative;
 }
+
 .header-portofolio::before {
   background-image: url("../images/jabat-tangan.jpg");
   height: 100vh;
@@ -19,49 +21,59 @@
   background-size: cover;
   filter: brightness(0.4);
 }
+
 .header-portofolio .wrapper {
   color: white;
   position: absolute;
   top: 50vh;
 }
+
 .header-portofolio .wrapper h1 {
   font-size: 5rem;
   font-weight: 600;
   font-style: bold;
 }
+
 .header-portofolio .wrapper .sub-title {
   font-size: 1.3rem;
   font-weight: 400;
 }
+
 .content-portofolio {
   position: relative;
 }
+
 .content-portofolio .frame-image {
   width: 98%;
   margin: auto;
   height: 18rem;
 }
+
 .content-portofolio .frame-image img {
   width: 100%;
   height: 100%;
   border-radius: 6px;
 }
+
 .content-portofolio .frame-image:hover img {
   cursor: pointer;
   /* transform: translate(-5%, -5%); */
   transform: scale(1.1);
 }
+
 .content-portofolio .content-image .title {
   font-style: bold;
   font-weight: 700;
   font-size: 18px;
 }
+
 .content-portofolio .content-image .description {
   font-size: 13px;
   color: #424242;
   font-weight: 300;
   margin-top: 10px;
 }
+
 .content-portofolio .title-produk {
   color: black;
   font-size: 2rem;
@@ -69,18 +81,22 @@
   margin-top: 5px;
   margin-bottom: 2rem;
 }
+
 .porto-2 {
   margin-top: 3rem;
 }
+
 .card-porto {
   display: none;
 }
+
 .card-porto:nth-child(1),
 .card-porto:nth-child(2),
 .card-porto:nth-child(3),
 .card-porto:nth-child(4) {
   display: block;
 }
+
 .content-portofolio .icon-tools {
   margin: auto;
   width: 50%;
@@ -88,24 +104,419 @@
   filter: grayscale();
   cursor: pointer;
 }
+
 .content-portofolio .icon-tools img {
   width: 100%;
   height: 100%;
 }
+
 .content-portofolio .icon-tools:hover {
   filter: none;
 }
+
+.img {
+  width: 7%;
+  border-radius: 7px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+.navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #666;
+
+}
+
+header #toggler {
+  display: none;
+}
+
+
+.nav-link:hover {
+
+  font-family: 'Secular One', sans-serif;
+}
+
+a:hover {
+  color: red !important;
+}
+
+.text {
+  font-weight: bold;
+  font-family: 'Secular One', sans-serif;
+  color: black;
+}
+
+.text-tulisan {
+  font-weight: bold;
+  font-family: 'Secular One', sans-serif;
+  color: black;
+}
+
+.p-70 {
+  padding: 70px;
+}
+
+.bg-gray {
+  background-color: #ff0000;
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.kontak {
+  color: white;
+}
+
+.list-unstyled li a {
+  text-decoration: none;
+  color: black;
+}
+
+.list-unstyled a:hover {
+  text-decoration: underline;
+}
+
+.bg-transparent {
+  background-color: rgb(222, 202, 202) !important;
+}
+
+.border-drak {
+  border-color: brown !important;
+}
+
+.border-end-0 {
+  border-right: 0;
+}
+
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.bg-drak-gray {
+  background-color: aquamarine;
+}
+
+.text-gary-300 {
+  color: rgb(0, 0, 0);
+}
+
+.fw-bold {
+  color: white;
+  font-family: 'Secular One', sans-serif;
+}
+
+.la {
+  color: white;
+}
+
+.text-uppercass {
+  color: white;
+  font-size: 19px;
+}
+
+.mb-3 {
+  color: white;
+}
+
+:root {
+  --pink: #e84393;
+}
+
+.tema {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--pink);
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgba(255, 51, 153, .05);
+}
+
+.heading span {
+  color: var(--pink);
+}
+
+.bnt {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #333;
+  color: #fff;
+  padding: .9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.bnt:hover {
+  background: var(--pink);
+}
+
+.sty {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.ukuran {
+  font-size: 30px;
+}
+
+.bnn {
+  color: white;
+}
+
+.icons-container {
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.icons-container .icons {
+  background: #fff;
+  border: .1rem solid rgba(0, 0, 0, .1);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+  border-radius: 13px;
+}
+
+.icons-container .icons img {
+  height: 5rem;
+  margin-right: 2rem;
+  border-radius: 13px;
+}
+
+.icons-container .icons h3 {
+  color: #333;
+  padding-bottom: .5rem;
+  font-size: 1.5rem;
+}
+
+.icons-container .icons span {
+  color: #555;
+  font-size: 1.3rem;
+}
+
+.ecommerce {
+  font-size: 15px;
+
+}
+
+.text {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.products .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  border: .1rem solid rgba(0, 0, 0, .1);
+  position: relative;
+}
+
+.products .box-container .box .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: .7rem 1rem;
+  font-size: 2rem;
+  color: var(--pink);
+  background: rgba(255, 51, 153, .05);
+  z-index: 1;
+  border-radius: .5rem;
+}
+
+.products .box-container .box .image {
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+.products .box-container .box .image img {
+  height: 25rem;
+}
+
+.products .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.products .box-container .box .image .icons {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.products .box-container .box:hover .image .icons {
+  bottom: 0;
+}
+
+.products .box-container .box .image .icons a {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width: 50%;
+  background: var(--pink);
+  color: #fff;
+}
+
+.products .box-container .box .image .icons .cart-btn1 {
+  border-left: .1rem solid #fff7;
+  border-right: .1rem solid #fff7;
+  width: 100%;
+}
+
+.products .box-container .box .image .icons a:hover {
+  background: #333;
+}
+
+.products .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.products .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.products .box-container .box .content .price {
+  font-size: 2.5rem;
+  color: var(--pink);
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+
+.products .box-container .box .content .price span {
+  font-size: 1.5rem;
+  color: #999;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+.review .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  padding: 3rem 2rem;
+  position: relative;
+  border: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.review .box-container .box .fa-quote-right {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 6rem;
+  color: #eee;
+}
+
+.review .box-container .box .stars i {
+  color: var(--pink);
+  font-size: 2rem;
+}
+
+.review .box-container .box p {
+  color: #999;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-top: 2rem;
+}
+
+.review .box-container .box .user {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.review .box-container .box .user img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.review .box-container .box .user h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.review .box-container .box .user span {
+  font-size: 1.5rem;
+  color: #999;
+}
+
 @media screen and (max-width: 767px) {
   .header-portofolio .wrapper h1 {
     font-size: 3rem;
   }
+
   .header-portofolio .wrapper .sub-title {
     font-size: 20px;
   }
+
   .content-portofolio .frame-image {
     height: 13rem;
     width: 100%;
   }
+
   .content-portofolio .icon-tools {
     width: 80%;
     height: 5rem;
@@ -118,9 +529,11 @@
   .header-portofolio .wrapper h1 {
     font-size: 5rem;
   }
+
   .header-portofolio .wrapper .sub-title {
     font-size: 2rem;
   }
+
   .content-portofolio .frame-image {
     height: 10rem;
     width: 100%;

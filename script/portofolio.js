@@ -2,7 +2,8 @@ const btnLebihBanyak = document.querySelector(".btn-lebih-banyak");
 const cardPortofolio = document.querySelectorAll(".card-porto");
 
 let currentCard = 2;
-btnLebihBanyak.addEventListener("click", () => {
+btnLebihBanyak.addEventListener("click", (e) => {
+  e.preventDefault();
   for (let i = currentCard; i < currentCard + 2; i++) {
     if (cardPortofolio[i]) {
       cardPortofolio[i].style.display = "block";

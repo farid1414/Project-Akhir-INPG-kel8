@@ -195,28 +195,27 @@ a {
 }
 
 .img {
-  width: 6%;
+  width: 5%;
   border-radius: 7px;
 }
 
-.navbar a {
-  font-size: 1.5rem;
-  padding: 0 1.5rem;
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  padding: 0 1rem;
   color: #666;
+  font-weight: 500;
 }
-
-
+.navbar-nav .nav-link:hover {
+  font-weight: 700;
+  color: #000;
+}
+.navbar-nav .nav-link.active {
+  color: #000;
+  font-weight: 600;
+}
 header #toggler {
   display: none;
 }
-
-.nav-link:hover {
-  font-family: "Secular One", sans-serif;
-}
-
-/* a:hover {
-  color: red !important;
-} */
 
 .text {
   font-weight: bold;
@@ -312,9 +311,10 @@ header #toggler {
 
 .heading {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
   color: var(--pink);
-  padding: 1rem;
+  padding: 10px;
+  font-weight: 600;
   margin: 2rem 0;
   background: rgba(255, 51, 153, 0.05);
 }
@@ -461,14 +461,15 @@ header #toggler {
 .carousel-caption {
   text-align: justify;
 }
+.carousel-header {
+  margin-top: 7rem;
+}
 
 .products .box .image .icons .cart-btn1 {
   border-left: 0.1rem solid #fff7;
   border-right: 0.1rem solid #fff7;
   width: 100%;
 }
-
-
 
 .products .box-container .box .image .icons a:hover {
   background: #333;
@@ -559,32 +560,21 @@ header #toggler {
 
 .About-us {
   width: 100%;
-  padding: 70px 0;
   background-color: rgb(241, 206, 223);
+  padding: 30px 0;
+  margin-bottom: 3rem;
 }
 
 .About-us img {
-  height: auto;
   width: 420px;
-  border-radius: 20px;
-}
-
-.About-teks {
-  width: 550px;
-}
-
-.main {
-  width: 1130px;
-  max-width: 95%;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  border-radius: 20px;
 }
 
 .About-teks h1 {
   color: black;
-  font-size: 80px;
+  font-size: 50px;
+  font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
@@ -604,26 +594,105 @@ header #toggler {
   font-size: 20px;
   margin-bottom: 45px;
 }
-
-button {
-  color: rgb(255, 255, 255);
-  background-color: rgb(128, 106, 148);
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 20px 35px;
-  border-radius: 30px;
-  transition: 0.4s;
-  font-size: 20px;
+.bottom-footer p {
+  font-weight: 600;
+  font-size: 18px;
 }
-
-button:hover {
-  background: transparent;
-  border: 2px solid;
-  color: rgb(128, 106, 148);
-  cursor: pointer;
+.content-todos .box-input {
+  margin-top: 30vh;
+  padding: 15px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
+.content-todos .form-control {
+  border: 2px solid black;
+}
+.content-todos .box-input span {
+  font-size: 12px;
+  padding: 0 4px;
+  font-weight: 600;
+  color: #9b9b99;
+}
+.content-todos .box-input .btn-todos {
+  margin-top: 15px;
+  background: blue;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  align-items: center;
+}
+.content-todos .box-input .btn-todos .fa {
+  margin-right: 3px;
+}
+.content-todos .header-task {
+  height: 6rem;
+  position: relative;
+  width: 90%;
+  margin: 15px auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.content-todos .header-task::before {
+  background-image: url("../images/bgtask.jpg");
+  height: 6rem;
+  width: 100%;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.6);
+}
+.content-todos .header-task h3 {
+  padding: 25px 15px;
+  color: white;
+  font-weight: 600;
+}
+.content-todos .content-task {
+  width: 90%;
+  margin: auto;
+}
+.content-todos .task-row {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #9b9b99;
+  margin-bottom: 15px;
+}
+.content-todos .content-task .text-task {
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  padding: 0;
+}
+.content-todos .content-task .btn-ceklist {
+  border: none;
+  border-radius: 6px;
+  background-color: green;
+  color: white;
+  padding: 5px 8px;
+}
+.content-todos .content-task .btn-delete {
+  border: none;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+  padding: 5px 8px;
+}
+.content-todos .content-task .date-task {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9b9b99;
+}
+.content-todos .header-task {
+  width: 100%;
+}
+.content-todos .content-task {
+  width: 100%;
+}
+.correct {
+  text-decoration: line-through;
+}
 @media screen and (max-width: 767px) {
   .wrapper h1 {
     font-size: 3rem;
@@ -652,6 +721,32 @@ button:hover {
     text-align: center;
     align-items: center;
     font-size: 14px;
+  }
+  .About-us img {
+    width: 90%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .img {
+    width: 10%;
+  }
+  .About-teks h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .About-teks h5 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .About-teks h5 {
+    font-size: 16px;
+  }
+  .content-todos .box-input {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .content-todos .content-task .btn-delete {
+    margin: 0;
   }
 }
 

@@ -1,467 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="shorcut icon" href="../images/logo-removebg-preview (1).png" />
+    <title>Home</title>
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./style/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <title>Home</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg bg-info">
-    <div class="container">
-      <img class="img" src="./images/logo-removebg-preview (1).png" alt="">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto" style="font-size: 20px; font-family: 'BIZ UDPMincho', serif;">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link active" href=".//pages/portofolio.html">Produck</a>
-          <a class="nav-link active" href="#">Blog</a>
-          <a class="nav-link active" href="#">Contact</a>
-          <a class="nav-link active" href="#">About</a>
-          <a class="nav-link active" href="#">Todus</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row ms-lg-5 me-lg-5 align-self-center  justify-content-between  ">
-          <div class="col-sm-12 col-lg-6">
-            <h2>Softwere House</h2>
-            <p>Saat ini bisnis sudah semakin berkembang sesuai dengan perkembangan teknologi yang
-              semakin pesat, terlebih sekarang sudah banyak sudah yang mengaitkannya dengan software
-              development yang berfungsi untuk mempermudah proses bisnis berbagai industri yang di jalankan.
-              Salah satunya adalah Software House yang sangat berperan penting untuk bisnis di masa-masa saat
-              ini.
-            </p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Langganan Sekarang
-            </button>
-          </div>
-          <div class="col-sm-12 col-lg-5 ">
-            <img src="./images/2.jpg" alt="" class="img-fluid rounded d-none d-lg-block" />
+  <body>
+    <nav class="navbar navbar-expand-lg bg-info fixed-top">
+      <div class="container">
+        <img class="img" src="./images/logo-removebg-preview (1).png" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="./home.html"
+              >Home</a
+            >
+            <a class="nav-link" href="./pages/portofolio.html">Produk</a>
+            <a class="nav-link" href="./pages/blog.html">Blog</a>
+            <a class="nav-link" href="./pages/contact.html">Contact</a>
+            <a class="nav-link" href="#aboutUs">About</a>
+            <a class="nav-link" href="./pages/To-Do-List.html">Todus</a>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="row ms-lg-5 me-lg-5 align-self-center  justify-content-between  ">
-          <div class="col-sm-12 col-lg-6">
-            <h2>Softwerwe House</h2>
+    </nav>
+
+    <section class="carousel-header">
+      <div class="container">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-between">
+                <div class="col-sm-12 col-lg-6">
+                  <h2>Softwere House</h2>
+                  <p>
+                    Saat ini bisnis sudah semakin berkembang sesuai dengan
+                    perkembangan teknologi yang semakin pesat, terlebih sekarang
+                    sudah banyak sudah yang mengaitkannya dengan software
+                    development yang berfungsi untuk mempermudah proses bisnis
+                    berbagai industri yang di jalankan. Salah satunya adalah
+                    Software House yang sangat berperan penting untuk bisnis di
+                    masa-masa saat ini.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Langganan Sekarang
+                  </button>
+                </div>
+                <div class="col-sm-12 col-lg-5">
+                  <img
+                    src="./images/2.jpg"
+                    alt=""
+                    class="img-fluid rounded d-none d-lg-block"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-self-center justify-content-between">
+                <div class="col-sm-12 col-lg-6">
+                  <h2>Softwerwe House</h2>
+                  <p>
+                    Untuk Bekerja Di Dalam Sebuah Perusahaan Software House Pun,
+                    Tentu Harus Memiliki Kemampuan Khusus Di Bidang IT
+                    (Information Technology). Setidaknya Di Dalamnya Harus
+                    Terdapat Seorang IT Agency Atau IT Specialist Yang Sudah
+                    Expert Dalam Urusan Pengembangan Aplikasi. Perusahaan Besar
+                    Yang Kini Sudah Maju Seperti: Microsoft, Apple Inc, Google
+                    Inc, Dan Oracle Corporation Merupakan Contoh Nyata Dari
+                    Perusahaan Software House.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Langganan Sekarang
+                  </button>
+                </div>
+                <div class="col-sm-12 col-lg-5">
+                  <img
+                    src="./images/3.jpg"
+                    alt=""
+                    class="img-fluid rounded d-none d-lg-block"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-self-center justify-content-between">
+                <div class="col-sm-12 col-lg-6">
+                  <h2>Softwere House</h2>
+                  <p>
+                    Software House Adalah Suatu Perusahaan Yang Bergelut Di
+                    Bidang Pengembangan Aplikasi (Software Development).
+                    Aplikasi Tersebut Bisa Dijalankan Kembangkan Baik Itu Oleh
+                    Pelaku Individu Ataupun Suatu Kelompok Seperti Sebuah
+                    Perusahaan Berbadan Hukum. Tujuan Utama Dari Software House
+                    Ini Yaitu Membuat Aplikasi Yang Diinginkan Oleh Client Atau
+                    Biasanya Kita Sebut Customize. Client Tersebut Bisa Berasal
+                    Dari Berbagai Pemilik Perusahaan Berskala Kecil Hingga
+                    Besar.
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      Langganan Sekarang
+                    </button>
+                  </p>
+                </div>
+
+                <div class="col-sm-12 col-lg-5">
+                  <img
+                    src="./images/2.jpg"
+                    alt=""
+                    class="img-fluid rounded d-none d-lg-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="heading mt-5">Produk Kami</h1>
+    <section class="content-portofolio mt-5">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-md-4 text-center col-12"></div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-md-6 mb-4 col-12 py-2 card-porto">
+            <div class="frame-image">
+              <img src="../images/project1.png" alt="" />
+            </div>
+            <div class="content-image mt-3">
+              <div class="title">COV-19 TRACKER</div>
+              <div class="sub-title">Situs Website</div>
+              <div class="description">
+                Mengembangkan situs web untuk memudahkan tracking data covid-19
+                yang ada di dunia guna memudahkan masyarakat untuk memantau
+                perkembangan covid-19
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-12 py-2 card-porto">
+            <div class="frame-image">
+              <img src="../images/project2.png" alt="" />
+            </div>
+            <div class="content-image mt-3">
+              <div class="title">Company Profile</div>
+              <div class="sub-title">Situs Website</div>
+              <div class="description">
+                Mengembangkan situs web company profile untuk memudahkan
+                perusahaan dalam hal memperkenalkan produk
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-12 py-2 card-porto">
+            <div class="frame-image">
+              <img src="../images/project3.png" alt="" />
+            </div>
+            <div class="content-image mt-3">
+              <div class="title">Portofolio</div>
+              <div class="sub-title">Situs Website</div>
+              <div class="description">
+                Mengembangkan situs web untuk menampilkan portofolio sebagai
+                hasil dari pekerjaan yang sudah dilakukan
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-12 py-2 card-porto">
+            <div class="frame-image">
+              <img src="../images/project2.png" alt="" />
+            </div>
+            <div class="content-image mt-3">
+              <div class="title">COV-19 TRACKER</div>
+              <div class="sub-title">Situs Website</div>
+              <div class="description">
+                Mengembangkan situs web untuk memudahkan tracking data covid-19
+                yang ada di dunia guna memudahkan masyarakat untuk memantau
+                perkembangan covid-19
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-12 py-2 card-porto">
+            <div class="frame-image">
+              <img src="../images/project3.png" alt="" />
+            </div>
+            <div class="content-image mt-3">
+              <div class="title">Portofolio</div>
+              <div class="sub-title">Situs Website</div>
+              <div class="description">
+                Mengembangkan situs web untuk menampilkan portofolio sebagai
+                hasil dari pekerjaan yang sudah dilakukan
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-12 py-2 porto-2 card-porto">
+            <div class="frame-image">
+              <img src="../images/project2.png" alt="" />
+            </div>
+            <div class="content-image mt-3">
+              <div class="title">COV-19 TRACKER</div>
+              <div class="sub-title">Situs Website</div>
+              <div class="description">
+                Mengembangkan situs web untuk memudahkan tracking data covid-19
+                yang ada di dunia guna memudahkan masyarakat untuk memantau
+                perkembangan covid-19
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-12 text-center">
+            <a href="./pages/portofolio.html"
+              ><button class="btn py-2 mb-3 btn-primary btn-lebih-banyak">
+                Lihat Lebih Banyak
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review mt-3 mb-5" id="review">
+      <div class="container">
+        <h1 class="heading">Customer Review</h1>
+        <div class="box-container">
+          <div class="box">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
             <p>
-              Untuk Bekerja Di Dalam Sebuah Perusahaan Software House Pun, Tentu Harus Memiliki Kemampuan Khusus Di
-              Bidang IT (Information Technology). Setidaknya Di Dalamnya Harus Terdapat Seorang IT Agency Atau IT
-              Specialist Yang Sudah Expert Dalam Urusan Pengembangan Aplikasi. Perusahaan Besar Yang Kini Sudah Maju
-              Seperti: Microsoft, Apple Inc, Google Inc, Dan Oracle Corporation Merupakan Contoh Nyata Dari Perusahaan
-              Software House.
+              berlangganan di sini sangat bagus, pelanannya nyaman , dan
+              pengerjaannya sangat cepat
             </p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Langganan Sekarang
-            </button>
-          </div>
-          <div class="col-sm-12 col-lg-5">
-            <img src="./images/3.jpg" alt="" class="img-fluid rounded d-none d-lg-block" />
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row ms-lg-5 me-lg-5 align-self-center  justify-content-between  ">
-          <div class="col-sm-12 col-lg-6">
-            <h2>Softwere House</h2>
-            <p>Software House Adalah Suatu Perusahaan Yang Bergelut Di Bidang Pengembangan Aplikasi (Software
-              Development). Aplikasi Tersebut Bisa Dijalankan Kembangkan Baik Itu Oleh Pelaku Individu Ataupun Suatu
-              Kelompok Seperti Sebuah Perusahaan Berbadan Hukum. Tujuan Utama Dari Software House Ini Yaitu Membuat
-              Aplikasi Yang Diinginkan Oleh Client Atau Biasanya Kita Sebut Customize. Client Tersebut Bisa Berasal Dari
-              Berbagai Pemilik Perusahaan Berskala Kecil Hingga Besar.
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Langganan Sekarang
-              </button>
-          </div>
-          <div class="col-sm-12 col-lg-5 ">
-            <img src="./images/2.jpg" alt="" class="img-fluid rounded d-none d-lg-block" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <table class="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th scope="col">No</th>
-                <th scope="col">JASA</th>
-                <th scope="col">BIAYA</th>
-                <th scope="col">WAKTU PENGERJAAN</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Pembuatan Website</td>
-                <td>Rp. 10.000.00</td>
-                <td>1 Bulan</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Pembuatan Aplikasi Mobile</td>
-                <td>Rp. 12.000.00</td>
-                <td>35 Hari</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a href="./pages/portofolio.html"><button type="button" class="btn btn-primary">Learn More</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <section class="About-us mt-3">
-    <div class="main">
-      <img src="./images/Image.12.jpg" alt="">
-      <div class="About-teks">
-        <h1>About Us</h1>
-        <h5>Kelompok 8 <span>Hacktiv8</span> </h5>
-        <p>Software house adalah suatu perusahaan yang bergelut di bidang pengembangan aplikasi (software development).
-          Aplikasi tersebut bisa dijalankan kembangkan baik itu oleh pelaku individu ataupun suatu kelompok seperti
-          sebuah perusahaan berbadan hukum.
-
-          Tujuan utama dari software house ini yaitu membuat aplikasi yang diinginkan oleh client atau biasanya kita
-          sebut Customize. Client tersebut bisa berasal dari berbagai pemilik perusahaan berskala kecil hingga besar.
-        </p>
-        <Button type="button">Lets Talk</Button>
-      </div>
-
-    </div>
-
-  </section>
-
-  <h1 class="heading">Products <span></span></h1>
-  <section class="content-portofolio mt-5">
-    <div class="container">
-      <div class="row justify-content-center" data-aos="fade-up">
-        <div class="col-md-4 text-center col-12">
-        </div>
-      </div>
-      <div class="row justify-content-start">
-        <div class="col-md-6 mb-4 col-12 py-2 card-porto" data-aos="fade-up" data-aos-delay="100">
-          <div class="frame-image">
-            <img src="../images/project1.png" alt="" />
-          </div>
-          <div class="content-image mt-3">
-            <div class="title">COV-19 TRACKER</div>
-            <div class="sub-title">Situs Website</div>
-            <div class="description">
-              Mengembangkan situs web untuk memudahkan tracking data covid-19
-              yang ada di dunia guna memudahkan masyarakat untuk memantau
-              perkembangan covid-19
+            <div class="user">
+              <img src="./images/3c_11zon.jpg" alt="" />
+              <div class="user-info">
+                <h3>Mikky Kiemeney</h3>
+                <span> happy costumer</span>
+              </div>
             </div>
+            <span class="fas fa-guote-right"></span>
           </div>
-        </div>
-        <div class="col-md-6 mb-4 col-12 py-2 porto-2 card-porto" data-aos="fade-up" data-aos-delay="200">
-          <div class="frame-image">
-            <img src="../images/project2.png" alt="" />
-          </div>
-          <div class="content-image mt-3">
-            <div class="title">Company Profile</div>
-            <div class="sub-title">Situs Website</div>
-            <div class="description">
-              Mengembangkan situs web company profile untuk memudahkan
-              perusahaan dalam hal memperkenalkan produk
+
+          <div class="box">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4 col-12 py-2 card-porto" data-aos="fade-up" data-aos-delay="300">
-          <div class="frame-image">
-            <img src="../images/project3.png" alt="" />
-          </div>
-          <div class="content-image mt-3">
-            <div class="title">Portofolio</div>
-            <div class="sub-title">Situs Website</div>
-            <div class="description">
-              Mengembangkan situs web untuk menampilkan portofolio sebagai
-              hasil dari pekerjaan yang sudah dilakukan
+            <p>
+              berlangganan di sini sangat bagus, pelanannya nyaman , dan
+              pengerjaannya sangat cepat
+            </p>
+            <div class="user">
+              <img src="./images/2c_11zon.jpg" alt="" />
+              <div class="user-info">
+                <h3>Bram Wispelwey</h3>
+                <span> happy costumer</span>
+              </div>
             </div>
+            <span class="fas fa-guote-right"></span>
           </div>
-        </div>
-        <div class="col-md-6 mb-4 col-12 py-2 porto-2 card-porto" data-aos="fade-up" data-aos-delay="400">
-          <div class="frame-image">
-            <img src="../images/project2.png" alt="" />
-          </div>
-          <div class="content-image mt-3">
-            <div class="title">COV-19 TRACKER</div>
-            <div class="sub-title">Situs Website</div>
-            <div class="description">
-              Mengembangkan situs web untuk memudahkan tracking data covid-19
-              yang ada di dunia guna memudahkan masyarakat untuk memantau
-              perkembangan covid-19
+
+          <div class="box">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4 col-12 py-2 card-porto" data-aos="fade-up" data-aos-delay="500">
-          <div class="frame-image">
-            <img src="../images/project3.png" alt="" />
-          </div>
-          <div class="content-image mt-3">
-            <div class="title">Portofolio</div>
-            <div class="sub-title">Situs Website</div>
-            <div class="description">
-              Mengembangkan situs web untuk menampilkan portofolio sebagai
-              hasil dari pekerjaan yang sudah dilakukan
+            <p>
+              berlangganan di sini sangat bagus, pelanannya nyaman , dan
+              pengerjaannya sangat cepat
+            </p>
+            <div class="user">
+              <img src="./images/1c_11zon.jpg" alt="" />
+              <div class="user-info">
+                <h3>jhony Chacha</h3>
+                <span> happy costumer</span>
+              </div>
             </div>
+            <span class="fas fa-guote-right"></span>
           </div>
-        </div>
-        <div class="col-md-6 mb-4 col-12 py-2 porto-2 card-porto" data-aos="fade-up" data-aos-delay="600">
-          <div class="frame-image">
-            <img src="../images/project2.png" alt="" />
-          </div>
-          <div class="content-image mt-3">
-            <div class="title">COV-19 TRACKER</div>
-            <div class="sub-title">Situs Website</div>
-            <div class="description">
-              Mengembangkan situs web untuk memudahkan tracking data covid-19
-              yang ada di dunia guna memudahkan masyarakat untuk memantau
-              perkembangan covid-19
+
+          <div class="box">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+            <p>
+              berlangganan di sini sangat bagus, pelanannya nyaman , dan
+              pengerjaannya sangat cepat
+            </p>
+            <div class="user">
+              <img src="./images/1c_11zon.jpg" alt="" />
+              <div class="user-info">
+                <h3>jhony Chacha</h3>
+                <span> happy costumer</span>
+              </div>
+            </div>
+            <span class="fas fa-guote-right"></span>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-4 col-12 text-center">
-          <a href="./pages/portofolio.html"><button class="btn py-2 mb-3 btn-primary btn-lebih-banyak">
-              Lebih Banyak
-            </button></a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <section class="icons-container mt-1">
-    <div class="icons">
-      <img src="./images/1b.png" alt="">
-      <div class="info">
-        <h3>Bank BRI</h3>
-        <span>Nyaman Dan Mudah</span>
-      </div>
-    </div>
-
-    <div class="icons">
-      <img src="./images/2b_11zon.jpg" alt="">
-      <div class="info">
-        <h3>Bank BNI</h3>
-        <span>Nyaman Dan Mudah</span>
-      </div>
-    </div>
-
-    <div class="icons">
-      <img src="./images/3b.png" alt="">
-      <div class="info">
-        <h3>Amazon</h3>
-        <span>Nyaman Dan Mudah</span>
-      </div>
-    </div>
-
-    <div class="icons">
-      <img src="./images/4b.png" alt="">
-      <div class="info">
-        <h3>Paypal</h3>
-        <span>Nyaman Dan Mudah</span>
-      </div>
-    </div>
-
-    <div class="icons">
-      <img src="./images/3b.png" alt="">
-      <div class="info">
-        <h3>Amazon</h3>
-        <span>Nyaman Dan Mudah</span>
-      </div>
-    </div>
-
-    <div class="icons">
-      <img src="./images/4b.png" alt="">
-      <div class="info">
-        <h3>Paypal</h3>
-        <span>Nyaman Dan Mudah</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="review mt-3" id="review">
-    <div class="container">
-      <h1 class="heading">Costumer <span>Review</span></h1>
-      <div class="box-container">
-        <div class="box">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>berlangganan di sini sangat bagus, pelanannya nyaman , dan pengerjaannya sangat cepat</p>
-          <div class="user">
-            <img src="./images/3c_11zon.jpg" alt="">
-            <div class="user-info">
-              <h3>Mikky Kiemeney</h3>
-              <span> happy costumer</span>
-            </div>
-          </div>
-          <span class="fas fa-guote-right"></span>
-        </div>
-
-        <div class="box">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>berlangganan di sini sangat bagus, pelanannya nyaman , dan pengerjaannya sangat cepat</p>
-          <div class="user">
-            <img src="./images/2c_11zon.jpg" alt="">
-            <div class="user-info">
-              <h3>Bram Wispelwey</h3>
-              <span> happy costumer</span>
-            </div>
-          </div>
-          <span class="fas fa-guote-right"></span>
-        </div>
-
-        <div class="box">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>berlangganan di sini sangat bagus, pelanannya nyaman , dan pengerjaannya sangat cepat</p>
-          <div class="user">
-            <img src="./images/1c_11zon.jpg" alt="">
-            <div class="user-info">
-              <h3>jhony Chacha</h3>
-              <span> happy costumer</span>
-            </div>
-          </div>
-          <span class="fas fa-guote-right"></span>
-        </div>
-
-        <div class="box">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>berlangganan di sini sangat bagus, pelanannya nyaman , dan pengerjaannya sangat cepat</p>
-          <div class="user">
-            <img src="./images/1c_11zon.jpg" alt="">
-            <div class="user-info">
-              <h3>jhony Chacha</h3>
-              <span> happy costumer</span>
-            </div>
-          </div>
-          <span class="fas fa-guote-right"></span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <footer style="font-size: 19px;">
-    <div class="py-6 bg-gray mt-3">
+    </section>
+    <section id="aboutUs" class="About-us mt-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            <div class="fw-bold text-uppercase text-heading mb-3">
-              E-Commerce
+          <div class="col-md-6 col-12">
+            <img src="./images/Image.12.jpg" alt="" />
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="About-teks">
+              <h1>About Us</h1>
+              <h5>Kelompok 8 <span>Hacktiv8</span></h5>
+              <p>
+                Software house adalah suatu perusahaan yang bergelut di bidang
+                pengembangan aplikasi (software development). Aplikasi tersebut
+                bisa dijalankan kembangkan baik itu oleh pelaku individu ataupun
+                suatu kelompok seperti sebuah perusahaan berbadan hukum. Tujuan
+                utama dari software house ini yaitu membuat aplikasi yang
+                diinginkan oleh client atau biasanya kita sebut Customize.
+                Client tersebut bisa berasal dari berbagai pemilik perusahaan
+                berskala kecil hingga besar.
+              </p>
             </div>
-            <p class="la">
-              Penyedia Software Manufaktur Specialist di Indonesia, dikembangkan secara khusus untuk industri manufaktur
-              agar menghasilkan solusi yang tepat, efisien dan berkualitas.
-            </p>
-            <p> </p>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a class="text-para" href="#" title="Youtube"><i class="fab fab-youtube"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-            <h6 class="text-uppercass text-heading mb-3">Sosial Medeia</h6>
-            <ul class="list-unstyled">
-              <li><a class="text-para" href="#">Instagram</a></li>
-              <li><a class="text-para" href="#">Youtube</a></li>
-              <li><a class="text-para" href="#">Maps</a></li>
-              <li><a class="text-para" href="#">About</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-            <h6 class="text-uppercass text-heading mb-3">Contact</h6>
-            <ul class="list-unstyled">
-              <p class="kontak">kel8@gmail.com</p>
-              <p class="kontak">+6233 7789 0987</p>
-            </ul>
-          </div>
-          <div class="col-lg-4">
-            <h6 class="text-uppercass text-heading mb-3">
-              E-Commerece
-            </h6>
-            <p class="mb-3">
-              EOS Teknologi salah satu perusahaan Software Development & IT Solution di Jakarta yang berpengalaman
-              lebih
-              dari 10 tahun dalam pengembangan Software Manufaktur, khususnya Fasilitas Kawasan Berikat.
-            </p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="py-4 bg-drak-gray text-gary-300">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-mb-6 text-center text-mb-start">
-            <p class="text-sm mb-md-0">&copy; 2022 PT E-Commerce, All Right</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-    crossorigin="anonymous"></script>
-</body>
+    </section>
 
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">JASA</th>
+                  <th scope="col">BIAYA</th>
+                  <th scope="col">WAKTU PENGERJAAN</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Pembuatan Website</td>
+                  <td>Rp. 10.000.00</td>
+                  <td>1 Bulan</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Pembuatan Aplikasi Mobile</td>
+                  <td>Rp. 12.000.00</td>
+                  <td>35 Hari</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="./pages/portofolio.html"
+              ><button type="button" class="btn btn-primary">
+                Liha Portofolio
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="font-size: 19px">
+      <div class="py-3 bg-gray mt-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <div class="fw-bold text-uppercase text-heading mb-3">
+                E-Commerce
+              </div>
+              <p class="la">
+                Penyedia Software Manufaktur Specialist di Indonesia,
+                dikembangkan secara khusus untuk industri manufaktur agar
+                menghasilkan solusi yang tepat, efisien dan berkualitas.
+              </p>
+              <p></p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="text-para" href="#" title="Youtube"
+                    ><i class="fab fab-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <h6 class="text-uppercass text-heading mb-3">Sosial Medeia</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-para" href="#">Instagram</a></li>
+                <li><a class="text-para" href="#">Youtube</a></li>
+                <li><a class="text-para" href="#">Maps</a></li>
+                <li><a class="text-para" href="#">About</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <h6 class="text-uppercass text-heading mb-3">Contact</h6>
+              <ul class="list-unstyled">
+                <p class="kontak">kel8@gmail.com</p>
+                <p class="kontak">+6233 7789 0987</p>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6 class="text-uppercass text-heading mb-3">E-Commerece</h6>
+              <p class="mb-3">
+                EOS Teknologi salah satu perusahaan Software Development & IT
+                Solution di Jakarta yang berpengalaman lebih dari 10 tahun dalam
+                pengembangan Software Manufaktur, khususnya Fasilitas Kawasan
+                Berikat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-2 bg-info bottom-footer">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-mb-6 text-center">
+              <p class="text-sm mb-md-0">
+                &copy; 2022 PT E-Commerce, All Right
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

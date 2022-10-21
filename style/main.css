@@ -594,6 +594,22 @@ header #toggler {
   font-size: 20px;
   margin-bottom: 45px;
 }
+.contact-form {
+  margin: 5rem 0;
+  position: relative;
+  margin-top: 50px;
+  background-color: rgb(241, 206, 223);
+  height: 300px;
+}
+.contact-form h1 {
+  color: #000000;
+  padding: 2em 1px;
+}
+.carousel img {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 .bottom-footer p {
   font-weight: 600;
   font-size: 18px;

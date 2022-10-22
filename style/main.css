@@ -605,10 +605,8 @@ header #toggler {
   color: #000000;
   padding: 2em 1px;
 }
-.carousel img {
+.carousel-contact img {
   height: 100vh;
-  background-size: cover;
-  background-position: center;
 }
 .bottom-footer p {
   font-weight: 600;

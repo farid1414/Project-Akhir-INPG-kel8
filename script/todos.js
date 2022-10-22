@@ -58,17 +58,12 @@ function renderData() {
     const colList = document.createElement("div");
     colList.setAttribute("class", "col-md-10 col-8");
     const textTask = document.createElement("div");
-    if (todos.isComplete) {
-      textTask.setAttribute("class", "text-task correct");
-    } else if (!todos.isComplete) {
-      textTask.setAttribute("class", "text-task ");
-    }
+    todos.isComplete
+      ? textTask.setAttribute("class", "text-task correct")
+      : textTask.setAttribute("class", "text-task ");
     textTask.innerHTML = todos.content;
     const dateTask = document.createElement("span");
     dateTask.setAttribute("class", "date-task");
-    if (todos.date) {
-      dateTask.innerHTML = todos.date;
-    }
     const colDelete = document.createElement("div");
     colDelete.setAttribute("class", "col-md-1 col-2");
     const btnDelete = document.createElement("button");
@@ -81,6 +76,7 @@ function renderData() {
     colCeklist.appendChild(btnCeklist);
     colList.appendChild(textTask);
     if (todos.date) {
+      dateTask.innerHTML = todos.date;
       colList.appendChild(dateTask);
     }
     btnDelete.appendChild(faDelete);
@@ -91,7 +87,6 @@ function renderData() {
     contentList.appendChild(divRow);
   }
   document.querySelector("#titleToDoList").value = " ";
-  document.querySelector("#dateToDoList").value = " ";
 }
 
 contentList.addEventListener("click", getButtonElemen);
